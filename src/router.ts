@@ -8,23 +8,17 @@ import FloatProblem from "./components/FloatProblem.vue";
 import FloatFix from "./components/FloatFix.vue";
 import DateProblem from "./components/DateProblem.vue";
 import DateFix from "./components/DateFix.vue";
+import NumberProblem from "./components/NumberProblem.vue";
+import NumberFix from "./components/NumberFix.vue";
 
 export const routes = [
   { path: "/", title: "Home", component: Home },
   {
-    path: "/reverse",
-    title: "column-reverse",
+    path: "/number",
+    title: "Number",
     children: [
-      { path: "", title: "Problem", component: ReverseProblem },
-      { path: "fix", title: "Fix", component: ReverseFix },
-    ],
-  },
-  {
-    path: "/transition-height",
-    title: "Transition height",
-    children: [
-      { path: "", title: "Problem", component: TransitionHeightProblem },
-      { path: "fix", title: "Fix", component: TransitionHeightFix },
+      { path: "", title: "Problem", component: NumberProblem },
+      { path: "fix", title: "Fix", component: NumberFix },
     ],
   },
   {
@@ -41,6 +35,22 @@ export const routes = [
     children: [
       { path: "", title: "Problem", component: DateProblem },
       { path: "fix", title: "Fix", component: DateFix },
+    ],
+  },
+  {
+    path: "/reverse",
+    title: "column-reverse",
+    children: [
+      { path: "", title: "Problem", component: ReverseProblem },
+      { path: "fix", title: "Fix", component: ReverseFix },
+    ],
+  },
+  {
+    path: "/transition-height",
+    title: "Transition height",
+    children: [
+      { path: "", title: "Problem", component: TransitionHeightProblem },
+      { path: "fix", title: "Fix", component: TransitionHeightFix },
     ],
   },
 ];
