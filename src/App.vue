@@ -15,13 +15,13 @@ const subRoutes = computed(
 <template>
   <div class="routes">
     <div v-for="route in routes">
-      <RouterLink :to="route.path">{{ route.name }}</RouterLink>
+      <RouterLink :to="route.path">{{ route.title }}</RouterLink>
     </div>
   </div>
   <div class="routes">
     <div v-for="subRoute in subRoutes">
       <RouterLink :to="`${rootPath}/${subRoute.path}`">
-        {{ subRoute.name }}
+        {{ subRoute.title }}
       </RouterLink>
     </div>
   </div>

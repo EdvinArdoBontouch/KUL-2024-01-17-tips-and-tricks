@@ -6,21 +6,21 @@ import TransitionHeightProblem from "./components/TransitionHeightProblem.vue";
 import TransitionHeightFix from "./components/TransitionHeightFix.vue";
 
 export const routes = [
-  { path: "/", name: "Home", component: Home },
+  { path: "/", title: "Home", component: Home },
   {
     path: "/reverse",
-    name: "column-reverse",
+    title: "column-reverse",
     children: [
-      { path: "", name: "Problem", component: ReverseProblem },
-      { path: "fix", name: "Fix", component: ReverseFix },
+      { path: "", title: "Problem", component: ReverseProblem },
+      { path: "fix", title: "Fix", component: ReverseFix },
     ],
   },
   {
     path: "/transition-height",
-    name: "Transition height",
+    title: "Transition height",
     children: [
-      { path: "", name: "Problem", component: TransitionHeightProblem },
-      { path: "fix", name: "Fix", component: TransitionHeightFix },
+      { path: "", title: "Problem", component: TransitionHeightProblem },
+      { path: "fix", title: "Fix", component: TransitionHeightFix },
     ],
   },
 ];
