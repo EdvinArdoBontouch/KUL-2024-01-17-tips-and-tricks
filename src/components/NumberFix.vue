@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const a = 9007199254740992n;
+const a = 9007199254740992n; // == Number.MAX_SAFE_INTEGER + 1 == 2^53
 const b = a + 1n;
 const isOpen = ref(false);
 </script>
@@ -10,7 +10,7 @@ const isOpen = ref(false);
   <div class="container">
     <div>{{ `a: ${a}` }}</div>
     <div>{{ `b: ${isOpen ? b : "???"}` }}</div>
-    <div>{{ `a === b: ${isOpen ? a === b : "???"}` }}</div>
+    <div>{{ `b - a: ${isOpen ? b - a : "???"}` }}</div>
     <button v-if="!isOpen" @click="isOpen = true">Reveal</button>
   </div>
 </template>

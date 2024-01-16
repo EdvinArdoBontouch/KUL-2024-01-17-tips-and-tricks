@@ -10,7 +10,7 @@ const isOpen = ref(false);
   <div class="container">
     <div>{{ `a: ${a}` }}</div>
     <div>{{ `b: ${isOpen ? b : "???"}` }}</div>
-    <div>{{ `a === b: ${isOpen ? a === b : "???"}` }}</div>
+    <div>{{ `b - a: ${isOpen ? b - a : "???"}` }}</div>
     <button v-if="!isOpen" @click="isOpen = true">Reveal</button>
   </div>
 </template>
