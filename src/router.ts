@@ -6,6 +6,8 @@ import TransitionHeightProblem from "./components/TransitionHeightProblem.vue";
 import TransitionHeightFix from "./components/TransitionHeightFix.vue";
 import FloatProblem from "./components/FloatProblem.vue";
 import FloatFix from "./components/FloatFix.vue";
+import DateProblem from "./components/DateProblem.vue";
+import DateFix from "./components/DateFix.vue";
 
 export const routes = [
   { path: "/", title: "Home", component: Home },
@@ -31,6 +33,14 @@ export const routes = [
     children: [
       { path: "", title: "Problem", component: FloatProblem },
       { path: "fix", title: "Fix", component: FloatFix },
+    ],
+  },
+  {
+    path: "/date",
+    title: "Date",
+    children: [
+      { path: "", title: "Problem", component: DateProblem },
+      { path: "fix", title: "Fix", component: DateFix },
     ],
   },
 ];
