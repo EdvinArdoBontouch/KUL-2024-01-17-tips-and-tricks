@@ -40,6 +40,6 @@ const isOpen = ref(true);
 
 <style scoped lang="scss">
 .text {
-  color: white;
+  background-color: white;
 }
 </style>

@@ -36,7 +36,7 @@ const isOpen = ref(true);
 
 <style scoped lang="scss">
 .text {
-  color: white;
+  background-color: white;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
   height: 0;
