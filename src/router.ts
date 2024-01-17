@@ -15,19 +15,19 @@ import ScrollShadow from "./components/ScrollShadow.vue";
 export const routes = [
   { path: "/", title: "Home", component: Home },
   {
-    path: "/number",
-    title: "Number",
-    children: [
-      { path: "", title: "Problem", component: NumberProblem },
-      { path: "fix", title: "Fix", component: NumberFix },
-    ],
-  },
-  {
     path: "/float",
     title: "Float",
     children: [
       { path: "", title: "Problem", component: FloatProblem },
       { path: "fix", title: "Fix", component: FloatFix },
+    ],
+  },
+  {
+    path: "/number",
+    title: "Number",
+    children: [
+      { path: "", title: "Problem", component: NumberProblem },
+      { path: "fix", title: "Fix", component: NumberFix },
     ],
   },
   {
