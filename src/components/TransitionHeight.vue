@@ -1,3 +1,4 @@
+<!-- From: https://markus.oberlehner.net/blog/transition-to-height-auto-with-vue/ -->
 <script setup lang="ts">
 const enter = (element: HTMLElement) => {
   const initialPosition = element.style.position;
