@@ -10,6 +10,7 @@ import DateProblem from "./components/DateProblem.vue";
 import DateFix from "./components/DateFix.vue";
 import NumberProblem from "./components/NumberProblem.vue";
 import NumberFix from "./components/NumberFix.vue";
+import ScrollShadow from "./components/ScrollShadow.vue";
 
 export const routes = [
   { path: "/", title: "Home", component: Home },
@@ -52,6 +53,11 @@ export const routes = [
       { path: "", title: "Problem", component: TransitionHeightProblem },
       { path: "fix", title: "Fix", component: TransitionHeightFix },
     ],
+  },
+  {
+    path: "/scroll-shadow",
+    title: "Scroll shadow",
+    component: ScrollShadow,
   },
 ];
 
